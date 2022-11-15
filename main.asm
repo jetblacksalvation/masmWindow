@@ -6,11 +6,9 @@ includelib kernel32.lib
 includelib msvcrt.lib
 includelib legacy_stdio_definitions.lib
 .data
-A db 5
-B db 2
-C dq 10
 
-caption db 'window', 0,0
+
+caption db 'window', 0
 text db "your computer is hacked >:)", 0
 
 .code
