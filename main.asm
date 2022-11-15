@@ -15,8 +15,8 @@ text db "your computer is hacked >:)", 0
 
 .code
 main proc
-	
-
+	;https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messageboxexa
+    ;https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messagebox
 
 	sub rsp, 28h        ; space for 4 arguments + 16byte aligned stack
     xor r9d, r9d        ; 4. argument: r9d = uType = 0
