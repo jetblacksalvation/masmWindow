@@ -11,19 +11,12 @@ B db 2
 C dq 10
 
 caption db 'window', 0,0
-text db "this is a window", 0
+text db "your computer is hacked >:)", 0
 
 .code
 main proc
-	xor rax,rax         ;avoid integer overflow during mul and div
-	mov al,B
-	mul C
-	mov r8b,al
-	idiv A
-	mov r8b,al
-	mov r9b,A
-	sub r9b,r8b
-	;mov result,r9b 
+	
+
 
 	sub rsp, 28h        ; space for 4 arguments + 16byte aligned stack
     xor r9d, r9d        ; 4. argument: r9d = uType = 0
