@@ -20,8 +20,8 @@ main proc
 
 	sub rsp, 28h        ; space for 4 arguments + 16byte aligned stack
     xor r9d, r9d        ; 4. argument: r9d = uType = 0
-    lea r8, [caption]   ; 3. argument: r8  = caption
-    lea rdx, [text]     ; 2. argument: rdx = window text
+    lea r8, caption   ; 3. argument: r8  = caption
+    lea rdx, text     ; 2. argument: rdx = window text
     xor rcx, rcx        ; 1. argument: rcx = hWnd = NULL
     call MessageBoxA
     xor ecx, ecx        ; ecx = exit code
